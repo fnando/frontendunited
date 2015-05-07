@@ -80,6 +80,22 @@ p {
   width: 17.5%;
   padding: 0 1em 0 0;
   float: left;
+  -webkit-transition: transform .3s ease;
+          transition: transform .3s ease;
+}
+
+.eventials-speaker:hover .eventials-speaker-photo {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.eventials-speaker-photo a:hover img,
+.eventials-speaker-photo a:focus img { border-color: #F9AF28; }
+
+.eventials-speaker-photo img {
+  -webkit-transition: border .3s ease;
+          transition: border .3s ease;
+  border: solid 3px transparent;
 }
 
 .eventials-speaker-info {
